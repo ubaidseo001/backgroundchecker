@@ -273,24 +273,25 @@
 <style>
 div {
   text-align: center;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 500px;
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  width: 100%;
+  max-width: 480px; /* Optimal width for forms */
+  background: #ffffff; /* Crisp white background */
+  padding: 40px;
+  border-radius: 12px; /* Rounded corners for modern feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 h3 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
+  color: #283593; /* Deep blue for contrast */
+  font-size: 26px; /* Larger font size for readability */
+  margin-bottom: 20px; /* Space below the heading */
 }
 
 p {
-  color: #666;
-  margin-bottom: 20px;
+  color: #555; /* Darker text for better readability */
+  font-size: 16px;
+  margin-bottom: 25px; /* Increased bottom margin */
 }
 
 form {
@@ -299,61 +300,55 @@ form {
   align-items: center;
 }
 
-input[type="text"],
-select {
-  width: calc(100% - 20px);
-  padding: 12px;
-  margin: 8px 0;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  transition: border-color 0.3s;
+input[type="text"], select {
+  width: 100%; /* Full width inputs */
+  padding: 15px;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 6px; /* Smooth edges */
+  transition: all 0.3s; /* Smooth transition for interactions */
+  outline: none; /* Removes the default focus outline */
 }
 
-input[type="text"]:focus,
-select:focus {
-  border-color: #0056b3;
+input[type="text"]:focus, select:focus {
+  border-color: #673ab7; /* Purple for a vibrant focus */
+  box-shadow: 0 0 8px rgba(103, 58, 183, 0.25); /* Glow effect on focus */
 }
 
 button {
-  padding: 12px 20px;
-  margin-top: 20px;
-  background-color: #007bff;
+  padding: 15px 30px;
+  background-color: #673ab7; /* Matching purple for the button */
   color: white;
+  font-size: 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #5e35b1; /* Slightly darker on hover for interactive feel */
 }
 
 label {
   text-align: left;
-  width: calc(100% - 20px);
-  font-weight: bold;
+  width: 100%;
+  color: #333;
+  font-weight: bold; /* Makes the text bold */
+  margin-bottom: 5px; /* Space between label and input */
 }
 
 .form-required {
-  color: red;
+  color: #d32f2f; /* Red color for required asterisk */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for better mobile viewing */
 @media (max-width: 600px) {
   div {
-    width: 100%;
-    padding: 10px;
-  }
-
-  input[type="text"],
-  select,
-  button {
-    width: 100%;
+    padding: 20px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
-</style>
+  </style>
